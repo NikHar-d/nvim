@@ -21,7 +21,7 @@ if '-h' in argv or '--help' in argv:
             'Examples:\n'+
             '    lspac C:/GLFW/include C:/GLAD/include\n'+
             '    lspac C:\\GLFW\\include --verbose "C:\\\\Users\\\\Acacia Door\\\\myincs"\n'+
-            '    lspac C:/GLFW/include -f ..'+
+            '    lspac C:/GLFW/include -f ..\n'+
             '    lspac -f /home/usr/myproj/cpp ~/libraries/SDL3/include'
           )
     exit()
