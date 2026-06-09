@@ -7,6 +7,6 @@ dependencies:
 
 goes into:
 
-- `init.vim` `C:\Users\Lenovo\AppData\Local\nvim`
-- `config.yaml` `C:\Users\Lenovo\AppData\Local\clangd`
+- `init.vim` `%LocalAppData%\nvim`
+- `config.yaml` `%LocalAppData%\clangd`
 - `lspac.py` `anywhere`
