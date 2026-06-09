@@ -17,7 +17,7 @@ if '-h' in argv or '--help' in argv:
             'Options:\n'+
             '    [--verbose] [-v] do not suppress commands output\n'+
             '    [--folder /some/path] [-f /some/path] set path where indexation will start (default is "./")\n'+
-            '    [--help] [-h] show this help output'+
+            '    [--help] [-h] show this help output\n'+
             'Examples:\n'+
             '    lspac C:/GLFW/include C:/GLAD/include\n'+
             '    lspac C:\\GLFW\\include --verbose "C:\\\\Users\\\\Acacia Door\\\\myincs"\n'+
