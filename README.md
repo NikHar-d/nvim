@@ -9,4 +9,4 @@ goes into:
 
 - `init.vim` `C:\Users\Lenovo\AppData\Local\nvim`
 - `config.yaml` `C:\Users\Lenovo\AppData\Local\clangd`
-- `lspac.py` `path`
+- `lspac.py` `anywhere`
