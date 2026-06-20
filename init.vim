@@ -1,11 +1,11 @@
 set number
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set mouse=a
 
 colorscheme habamax
-
 
 inoremap <C-s> <esc>:w<CR>
 nnoremap <C-s> <esc>:w<CR>
@@ -24,19 +24,29 @@ nnoremap <A-j> a<esc><S-v>xpgv<esc>j
 inoremap <A-k> <esc><S-v>xkkpgv<esc>kka
 inoremap <A-j> <esc><S-v>xpgv<esc>ja
 
-nnoremap <C-j> a<esc>:<<CR>gi<Left><Left><esc>
-nnoremap <C-k> a<esc>:><CR>gi<Right><Right><esc>
-vnoremap <C-j> :<<CR>gv
-vnoremap <C-k> :><CR>gv
-inoremap <C-j> <esc>:<<CR>gi<Left><Left>
-inoremap <C-k> <esc>:><CR>gi<Right><Right>
+nnoremap <A-h> a<esc>:<<CR>gi<Left><Left><esc>
+nnoremap <A-l> a<esc>:><CR>gi<Right><Right><esc>
+vnoremap <A-h> :<<CR>gv
+vnoremap <A-l> :><CR>gv
+inoremap <A-h> <esc>:<<CR>gi<Left><Left>
+inoremap <A-l> <esc>:><CR>gi<Right><Right>
 
 
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug 'neovim/nvim-lspconfig'
 Plug 'microsoft/pyright'
+Plug 'ibhagwan/fzf-lua'
+Plug 'akinsho/bufferline.nvim'
 call plug#end()
+
+
+set termguicolors
+lua require("bufferline").setup{}
+
+nnoremap <Space>w <esc>:bdelete!<CR>
+nnoremap <Space>j <esc>:bp<CR>
+nnoremap <Space>k <esc>:bn<CR>
 
 colorscheme gruvbox
 
@@ -51,6 +61,9 @@ nnoremap <S-F1> <C-t>
 inoremap <F1> <esc><C-]>
 
 noremap <F2> :lua vim.diagnostic.open_float()<CR>
-inoremap <F2> <esc>:lua vim.diagnostic.open_float()<CR>a
+inoremap <F2> <esc>:lua vim.diagnostic.open_float()<CR>
 
-nnoremap <F3> gcc
+nnoremap <A-F1> :lua vim.lsp.buf.hover()<CR> 
+inoremap <A-F1> <esc>:lua vim.lsp.buf.hover()<CR> 
+
+nnoremap <Space>f :FzfLua files<CR>
