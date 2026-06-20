@@ -67,3 +67,4 @@ nnoremap <A-F1> :lua vim.lsp.buf.hover()<CR>
 inoremap <A-F1> <esc>:lua vim.lsp.buf.hover()<CR> 
 
 nnoremap <Space>f :FzfLua files<CR>
+nnoremap <Space>g :FzfLua live_grep<CR>
