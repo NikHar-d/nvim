@@ -3,8 +3,9 @@ dependencies:
 [plug](https://github.com/junegunn/vim-plug)
 [clangd](https://clangd.llvm.org/installation)
 [python](https://www.python.org/)
-[cmake](https://cmake.org/download
+[cmake](https://cmake.org/download)
 [fzf](https://github.com/junegunn/fzf/releases)
+[rg](https://github.com/BurntSushi/ripgrep/releases)
 
 goes into:
 
